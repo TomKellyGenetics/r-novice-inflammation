@@ -256,6 +256,19 @@ head(dat)
 
 ~~~
 
+Using character vectors, we can assign identifying names to each row or column with the 'rownames' and 'colnames' commands. These are displayed with the corresponding data when called as shown below:
+
+~~~{.r}
+rownames(dat)<-paste("Row", 1:40)
+colnames(dat)<-paste("Col", 1:40)
+head (dat)
+~~~
+
+
+~~~{.output}
+Display matrix with row/col names - will have impact on downstream outputs too.
+~~~
+
 > ## Challenge {.challenge}
 >
 > Draw diagrams showing what variables refer to what values after each statement in the following program:
