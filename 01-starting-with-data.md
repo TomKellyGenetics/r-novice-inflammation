@@ -308,8 +308,8 @@ If we want to get a single value from the data frame, we can provide an [index](
 
 
 ~~~{.r}
-# first value in dat
-dat[1, 1]
+# value from dat row 1 and column 2
+dat[1, 2]
 ~~~
 
 
@@ -429,6 +429,17 @@ dat[, 16]
 
 ~~~
 
+> ## Challenge {.challenge}
+> Multi-choice: How would you show data point in the 6th column and 3rd row of dat? 
+>
+> A. mat[6][3]
+> B. mat[3][6]
+> C. mat[6, 3]
+> D. mat[3, 6]
+> E. mat[6:3]
+> F. mat[3:6]
+
+
 Now let's perform some common mathematical operations to learn about our inflammation data.
 When analyzing data we often want to look at partial statistics, such as the maximum value per patient or the average value per day. 
 One way to do this is to select the data we want to create a new temporary data frame, and then perform the calculation on this subset:
@@ -478,7 +489,6 @@ min(dat[, 7])
 [1] 1
 
 ~~~
-
 
 
 ~~~{.r}
